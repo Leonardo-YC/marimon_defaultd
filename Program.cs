@@ -15,15 +15,13 @@ var connectionString = builder.Configuration.GetConnectionString("PostgreSQLConn
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(connectionString));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
-
-// Configuración simplificada y correcta de Identity
+// ✅ Configuración completa y correcta de Identity con soporte para roles
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => 
 {
-    options.SignIn.RequireConfirmedAccount = true; // Confirma por email
+    options.SignIn.RequireConfirmedAccount = true; // Confirmación por correo
     options.Password.RequireDigit = true;
     options.Password.RequiredLength = 8;
-    options.Password.RequireNonAlphanumeric = false; // Cambiado a false para facilitar pruebas
+    options.Password.RequireNonAlphanumeric = false; // Más fácil para pruebas
     options.Password.RequireUppercase = true;
     options.Password.RequireLowercase = true;
 })
@@ -39,7 +37,7 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
-// Configurar Data Protection para guardar claves en una carpeta persistente dentro del contenedor
+// Protección de datos persistente en carpeta del contenedor
 builder.Services.AddDataProtection()
     .PersistKeysToFileSystem(new DirectoryInfo("/app/keys"))
     .SetApplicationName("marimon_defaultd");
@@ -61,6 +59,7 @@ else
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+
 app.UseAuthentication();
 app.UseAuthorization();
 
