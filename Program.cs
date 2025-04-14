@@ -15,6 +15,8 @@ var connectionString = builder.Configuration.GetConnectionString("PostgreSQLConn
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(connectionString));
 
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
+
 // ✅ Configuración completa y correcta de Identity con soporte para roles
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => 
 {
