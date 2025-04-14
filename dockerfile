@@ -1,11 +1,10 @@
-# Etapa de build
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build-env
 WORKDIR /app
 
-# Copiar csproj y restaurar dependencias
+# Copy csproj and restore dependencies
 COPY *.csproj ./
 RUN dotnet restore
-
+    
 # Copiar el resto del código y compilar
 COPY . ./
 RUN dotnet publish -c Release -o out
@@ -17,9 +16,6 @@ WORKDIR /app
 # Copiar los archivos publicados desde la etapa de build
 COPY --from=build-env /app/out .
 
-# Exponer puertos
-EXPOSE 80
-EXPOSE 443
+ENV APP_NET_CORE marimon_defaultd.dll 
 
-# Comando para arrancar la app
-ENTRYPOINT ["dotnet", "marimon_defaultd.dll"]
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet $APP_NET_CORE
