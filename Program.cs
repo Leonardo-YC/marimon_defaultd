@@ -15,15 +15,13 @@ var connectionString = builder.Configuration.GetConnectionString("PostgreSQLConn
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(connectionString));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
-
-// ✅ Configuración completa y correcta de Identity con soporte para roles
+// ✅ Configuración de Identity CON soporte para roles
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => 
 {
-    options.SignIn.RequireConfirmedAccount = true; // Confirmación por correo
+    options.SignIn.RequireConfirmedAccount = true;
     options.Password.RequireDigit = true;
     options.Password.RequiredLength = 8;
-    options.Password.RequireNonAlphanumeric = false; // Más fácil para pruebas
+    options.Password.RequireNonAlphanumeric = false;
     options.Password.RequireUppercase = true;
     options.Password.RequireLowercase = true;
 })
