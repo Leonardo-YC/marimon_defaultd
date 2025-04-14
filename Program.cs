@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using marimon_defaultd.Data;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using marimon_defaultd.Services;
+using Microsoft.AspNetCore.DataProtection;
+using System.IO;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,8 +35,14 @@ builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("Emai
 builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+
+// Configurar Data Protection para guardar claves en una carpeta persistente dentro del contenedor
+builder.Services.AddDataProtection()
+    .PersistKeysToFileSystem(new DirectoryInfo("/app/keys"))
+    .SetApplicationName("marimon_defaultd");
 
 var app = builder.Build();
 
