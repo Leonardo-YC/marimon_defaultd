@@ -1,82 +1,112 @@
 ﻿@page
 @model LoginModel
-
 @{
     ViewData["Title"] = "Iniciar sesión";
 }
+<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
 
-<h1>@ViewData["Title"]</h1>
-<div class="row">
-    <div class="col-md-4">
-        <section>
-            <form id="account" method="post">
-                <h2>Usar una cuenta local para iniciar sesión</h2>
-                <hr />
-                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                    <label asp-for="Input.Email" class="form-label">Correo electrónico</label>
-                    <span asp-validation-for="Input.Email" class="text-danger"></span>
-                </div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="Contraseña" />
-                    <label asp-for="Input.Password" class="form-label">Contraseña</label>
-                    <span asp-validation-for="Input.Password" class="text-danger"></span>
-                </div>
-                <div class="checkbox mb-3">
-                    <label asp-for="Input.RememberMe" class="form-label">
-                        <input class="form-check-input" asp-for="Input.RememberMe" />
-                        @Html.DisplayNameFor(m => m.Input.RememberMe)
-                    </label>
-                </div>
-                <div>
-                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Iniciar sesión</button>
-                </div>
-                <div>
-                    <p>
-                        <a id="forgot-password" asp-page="./ForgotPassword">¿Olvidaste tu contraseña?</a>
-                    </p>
-                    <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Registrarse como nuevo usuario</a>
-                    </p>
-                    <!--<p>
-                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Reenviar confirmación por correo</a>-->
-                    </p>
-                </div>
-            </form>
-        </section>
-    </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Usar otro servicio para iniciar sesión</h3>
-            <hr />
+<div class="login_container">
+    <div class="login_form">
+        <h3>Iniciar sesión con</h3>
+        
+        <!-- Sección de iniciar sesión con proveedores externos -->
+        <div class="login_option">
             @{
                 if ((Model.ExternalLogins?.Count ?? 0) == 0)
                 {
-                    <div>
-                        <p>
-                            No hay servicios de autenticación externos configurados. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
+                    <div class="option">
+                        <p class="no-providers">
+                            No hay servicios de autenticación externos configurados. 
+                            <a href="https://go.microsoft.com/fwlink/?LinkID=532715">Más información sobre la configuración de servicios externos</a>.
                         </p>
                     </div>
                 }
                 else
                 {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins!)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
-                            </p>
-                        </div>
-                    </form>
+                    <div class="option">
+                        <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                            @foreach (var provider in Model.ExternalLogins!)
+                            {
+                                <button type="submit" class="social-login-btn" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">
+                                    @if (provider.Name.ToLower().Contains("google"))
+                                    {
+                                        <div class="google-icon"></div>
+                                    }
+                                    <span>@provider.DisplayName</span>
+                                </button>
+                            }
+                        </form>
+                    </div>
                 }
             }
+        </div>
+        
+        <p class="separator">
+            <span>o</span>
+        </p>
+        
+        <!-- Sección de iniciar sesión con cuenta local -->
+        <section class="local-login">
+            <form id="account" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                
+                <!-- Email input box -->
+                <div class="input_box">
+                    <label asp-for="Input.Email">Correo electrónico</label>
+                    <input asp-for="Input.Email" autocomplete="username" aria-required="true" placeholder="Ingresa tu correo electrónico" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                
+                <!-- Password input box -->
+                <div class="input_box">
+                    <div class="password_title">
+                        <label asp-for="Input.Password">Contraseña</label>
+                        <a id="forgot-password" asp-page="./ForgotPassword">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <input asp-for="Input.Password" autocomplete="current-password" aria-required="true" placeholder="Ingresa tu contraseña" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                
+                <!-- Remember me checkbox -->
+                <div class="checkbox">
+                    <label asp-for="Input.RememberMe">
+                        <input class="form-check-input" asp-for="Input.RememberMe" />
+                        Recuérdame
+                    </label>
+                </div>
+                
+                <!-- Login button -->
+                <button id="login-submit" type="submit">Iniciar sesión</button>
+                
+                <p class="sign_up">¿No tienes una cuenta? <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Registrarse</a></p>
+            </form>
         </section>
+        
+        <!-- Información de depuración (mantenida del original) -->
+        <div class="debug-info">
+            <div class="alert alert-info">
+                <p>Proveedores disponibles: @(Model.ExternalLogins?.Count ?? 0)</p>
+                @if (Model.ExternalLogins != null && Model.ExternalLogins.Any())
+                {
+                    foreach (var provider in Model.ExternalLogins)
+                    {
+                        <p>- @provider.Name (@provider.DisplayName)</p>
+                    }
+                }
+                else
+                {
+                    <p>No hay proveedores configurados</p>
+                }
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="login_image">
+        <img src="~/images/login.jpg" alt="Imagen de la empresa" />
     </div>
 </div>
+
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
