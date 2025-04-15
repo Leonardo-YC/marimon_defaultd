@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "v+VD+1tzETHp1OjFo5+T/Z+VyXnkEeWDtfdyehy6vQY=",
+  "Hash": "pul5HnniPy27vIk6UNkaXhEYfBdj1eqazqoUYfGHwMc=",
   "Source": "marimon_defaultd",
   "BasePath": "_content/marimon_defaultd",
   "Mode": "Default",
@@ -1382,12 +1382,12 @@
       "OriginalItemSpec": "C:\\Users\\LES YC\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.3\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\obj\\Debug\\net9.0\\compressed\\0xfaes7tar-tf9zwqpwvi.gz",
+      "Identity": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\obj\\Debug\\net9.0\\compressed\\0xfaes7tar-5rcc38ram9.gz",
       "SourceId": "marimon_defaultd",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/marimon_defaultd",
-      "RelativePath": "css/login#[.{fingerprint=tf9zwqpwvi}]?.css.gz",
+      "RelativePath": "css/login#[.{fingerprint=5rcc38ram9}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\wwwroot\\css\\login.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "yzddv8h237",
-      "Integrity": "4kjbnfqXW5j75/+G35hoK8Se2KWS4pmSLh7ER9cru5o=",
+      "Fingerprint": "43wflbzgru",
+      "Integrity": "MMHwX3BInH9Ke1g6DL1D1ZRAIPzq5LWWCO9Q65+7bMg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\wwwroot\\css\\login.css"
@@ -4000,8 +4000,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tf9zwqpwvi",
-      "Integrity": "d42GuaXc2QGz0/BDieueZdhtCyzyfXlt/YeJnPTiQSE=",
+      "Fingerprint": "5rcc38ram9",
+      "Integrity": "kf6Z/qezRHwIfu3YHU8OvO6EauhFWYXbOcs7LC2s7Xc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login.css"
@@ -4047,6 +4047,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\wwwroot\\images\\login.jpg",
+      "SourceId": "marimon_defaultd",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\wwwroot\\",
+      "BasePath": "_content/marimon_defaultd",
+      "RelativePath": "images/login#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "trei5x1llp",
+      "Integrity": "SbRPV4fhp0g9GB7p7jB/OJjIDOx/27vpBhvAx7o6zsY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\login.jpg"
     },
     {
       "Identity": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\wwwroot\\js\\site.js",
@@ -5269,13 +5290,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/login.css",
-      "AssetFile": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\obj\\Debug\\net9.0\\compressed\\0xfaes7tar-tf9zwqpwvi.gz",
+      "Route": "css/login.5rcc38ram9.css",
+      "AssetFile": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\obj\\Debug\\net9.0\\compressed\\0xfaes7tar-5rcc38ram9.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000508905852"
+          "Quality": "0.000450653447"
         }
       ],
       "ResponseHeaders": [
@@ -5285,19 +5306,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1964"
+          "Value": "2218"
         },
         {
           "Name": "ETag",
-          "Value": "\"4kjbnfqXW5j75/+G35hoK8Se2KWS4pmSLh7ER9cru5o=\""
+          "Value": "\"MMHwX3BInH9Ke1g6DL1D1ZRAIPzq5LWWCO9Q65+7bMg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 16:04:33 GMT"
+          "Value": "Tue, 15 Apr 2025 16:25:58 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -5313,18 +5334,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"d42GuaXc2QGz0/BDieueZdhtCyzyfXlt/YeJnPTiQSE=\""
+          "Value": "W/\"kf6Z/qezRHwIfu3YHU8OvO6EauhFWYXbOcs7LC2s7Xc=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "5rcc38ram9"
+        },
+        {
+          "Name": "label",
+          "Value": "css/login.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-d42GuaXc2QGz0/BDieueZdhtCyzyfXlt/YeJnPTiQSE="
+          "Value": "sha256-kf6Z/qezRHwIfu3YHU8OvO6EauhFWYXbOcs7LC2s7Xc="
         }
       ]
     },
     {
-      "Route": "css/login.css",
+      "Route": "css/login.5rcc38ram9.css",
       "AssetFile": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\wwwroot\\css\\login.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5334,7 +5363,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6089"
+          "Value": "6998"
         },
         {
           "Name": "Content-Type",
@@ -5342,121 +5371,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"d42GuaXc2QGz0/BDieueZdhtCyzyfXlt/YeJnPTiQSE=\""
+          "Value": "\"kf6Z/qezRHwIfu3YHU8OvO6EauhFWYXbOcs7LC2s7Xc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 16:04:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-d42GuaXc2QGz0/BDieueZdhtCyzyfXlt/YeJnPTiQSE="
-        }
-      ]
-    },
-    {
-      "Route": "css/login.css.gz",
-      "AssetFile": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\obj\\Debug\\net9.0\\compressed\\0xfaes7tar-tf9zwqpwvi.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1964"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4kjbnfqXW5j75/+G35hoK8Se2KWS4pmSLh7ER9cru5o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 16:04:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-4kjbnfqXW5j75/+G35hoK8Se2KWS4pmSLh7ER9cru5o="
-        }
-      ]
-    },
-    {
-      "Route": "css/login.tf9zwqpwvi.css",
-      "AssetFile": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\obj\\Debug\\net9.0\\compressed\\0xfaes7tar-tf9zwqpwvi.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000508905852"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1964"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4kjbnfqXW5j75/+G35hoK8Se2KWS4pmSLh7ER9cru5o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 16:04:33 GMT"
+          "Value": "Tue, 15 Apr 2025 16:25:58 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"d42GuaXc2QGz0/BDieueZdhtCyzyfXlt/YeJnPTiQSE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tf9zwqpwvi"
+          "Value": "5rcc38ram9"
         },
         {
           "Name": "label",
@@ -5464,13 +5393,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-d42GuaXc2QGz0/BDieueZdhtCyzyfXlt/YeJnPTiQSE="
+          "Value": "sha256-kf6Z/qezRHwIfu3YHU8OvO6EauhFWYXbOcs7LC2s7Xc="
         }
       ]
     },
     {
-      "Route": "css/login.tf9zwqpwvi.css",
-      "AssetFile": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\wwwroot\\css\\login.css",
+      "Route": "css/login.5rcc38ram9.css.gz",
+      "AssetFile": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\obj\\Debug\\net9.0\\compressed\\0xfaes7tar-5rcc38ram9.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5479,7 +5408,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6089"
+          "Value": "2218"
         },
         {
           "Name": "Content-Type",
@@ -5487,56 +5416,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"d42GuaXc2QGz0/BDieueZdhtCyzyfXlt/YeJnPTiQSE=\""
+          "Value": "\"MMHwX3BInH9Ke1g6DL1D1ZRAIPzq5LWWCO9Q65+7bMg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 16:04:33 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "tf9zwqpwvi"
-        },
-        {
-          "Name": "label",
-          "Value": "css/login.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-d42GuaXc2QGz0/BDieueZdhtCyzyfXlt/YeJnPTiQSE="
-        }
-      ]
-    },
-    {
-      "Route": "css/login.tf9zwqpwvi.css.gz",
-      "AssetFile": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\obj\\Debug\\net9.0\\compressed\\0xfaes7tar-tf9zwqpwvi.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1964"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4kjbnfqXW5j75/+G35hoK8Se2KWS4pmSLh7ER9cru5o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 15 Apr 2025 16:04:33 GMT"
+          "Value": "Tue, 15 Apr 2025 16:25:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5554,7 +5438,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tf9zwqpwvi"
+          "Value": "5rcc38ram9"
         },
         {
           "Name": "label",
@@ -5562,7 +5446,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4kjbnfqXW5j75/+G35hoK8Se2KWS4pmSLh7ER9cru5o="
+          "Value": "sha256-MMHwX3BInH9Ke1g6DL1D1ZRAIPzq5LWWCO9Q65+7bMg="
+        }
+      ]
+    },
+    {
+      "Route": "css/login.css",
+      "AssetFile": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\obj\\Debug\\net9.0\\compressed\\0xfaes7tar-5rcc38ram9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000450653447"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2218"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MMHwX3BInH9Ke1g6DL1D1ZRAIPzq5LWWCO9Q65+7bMg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 16:25:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"kf6Z/qezRHwIfu3YHU8OvO6EauhFWYXbOcs7LC2s7Xc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kf6Z/qezRHwIfu3YHU8OvO6EauhFWYXbOcs7LC2s7Xc="
+        }
+      ]
+    },
+    {
+      "Route": "css/login.css",
+      "AssetFile": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\wwwroot\\css\\login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6998"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kf6Z/qezRHwIfu3YHU8OvO6EauhFWYXbOcs7LC2s7Xc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 16:25:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kf6Z/qezRHwIfu3YHU8OvO6EauhFWYXbOcs7LC2s7Xc="
+        }
+      ]
+    },
+    {
+      "Route": "css/login.css.gz",
+      "AssetFile": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\obj\\Debug\\net9.0\\compressed\\0xfaes7tar-5rcc38ram9.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2218"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MMHwX3BInH9Ke1g6DL1D1ZRAIPzq5LWWCO9Q65+7bMg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 16:25:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MMHwX3BInH9Ke1g6DL1D1ZRAIPzq5LWWCO9Q65+7bMg="
         }
       ]
     },
@@ -14764,6 +14785,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-JKWeHUaANNuffeRatdc54UCb84RoxjEw/nTq8Mops8Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/login.jpg",
+      "AssetFile": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\wwwroot\\images\\login.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12186719"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SbRPV4fhp0g9GB7p7jB/OJjIDOx/27vpBhvAx7o6zsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 16:15:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SbRPV4fhp0g9GB7p7jB/OJjIDOx/27vpBhvAx7o6zsY="
+        }
+      ]
+    },
+    {
+      "Route": "images/login.trei5x1llp.jpg",
+      "AssetFile": "C:\\Users\\LES YC\\Documents\\marimon_defaultd\\wwwroot\\images\\login.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12186719"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SbRPV4fhp0g9GB7p7jB/OJjIDOx/27vpBhvAx7o6zsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 16:15:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "trei5x1llp"
+        },
+        {
+          "Name": "label",
+          "Value": "images/login.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SbRPV4fhp0g9GB7p7jB/OJjIDOx/27vpBhvAx7o6zsY="
         }
       ]
     },

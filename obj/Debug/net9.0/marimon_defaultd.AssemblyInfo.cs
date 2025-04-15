@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("marimon_defaultd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df554427ce500806176b0fd1b62b331c3571edd5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d9e4e20fa18dd63529634e32222930eb8388bc7")]
 [assembly: System.Reflection.AssemblyProductAttribute("marimon_defaultd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("marimon_defaultd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

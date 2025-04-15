@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/marimon_defaultd/css/login.5rcc38ram9.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\login.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5rcc38ram9"},{"Name":"integrity","Value":"sha256-kf6Z/qezRHwIfu3YHU8OvO6EauhFWYXbOcs7LC2s7Xc="},{"Name":"label","Value":"_content/marimon_defaultd/css/login.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6998"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022kf6Z/qezRHwIfu3YHU8OvO6EauhFWYXbOcs7LC2s7Xc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Apr 2025 16:25:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/marimon_defaultd/css/login.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\login.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-d42GuaXc2QGz0/BDieueZdhtCyzyfXlt/YeJnPTiQSE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6089"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022d42GuaXc2QGz0/BDieueZdhtCyzyfXlt/YeJnPTiQSE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Apr 2025 16:04:33 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/marimon_defaultd/css/login.tf9zwqpwvi.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\login.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tf9zwqpwvi"},{"Name":"integrity","Value":"sha256-d42GuaXc2QGz0/BDieueZdhtCyzyfXlt/YeJnPTiQSE="},{"Name":"label","Value":"_content/marimon_defaultd/css/login.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6089"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022d42GuaXc2QGz0/BDieueZdhtCyzyfXlt/YeJnPTiQSE=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Apr 2025 16:04:33 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-kf6Z/qezRHwIfu3YHU8OvO6EauhFWYXbOcs7LC2s7Xc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6998"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022kf6Z/qezRHwIfu3YHU8OvO6EauhFWYXbOcs7LC2s7Xc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Apr 2025 16:25:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/marimon_defaultd/css/site.c2tiyv64ts.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
@@ -35,6 +35,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Apr 2025 12:13:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/marimon_defaultd/images/login.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\login.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SbRPV4fhp0g9GB7p7jB/OJjIDOx/27vpBhvAx7o6zsY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"12186719"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SbRPV4fhp0g9GB7p7jB/OJjIDOx/27vpBhvAx7o6zsY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Apr 2025 16:15:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/marimon_defaultd/images/login.trei5x1llp.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\login.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"trei5x1llp"},{"Name":"integrity","Value":"sha256-SbRPV4fhp0g9GB7p7jB/OJjIDOx/27vpBhvAx7o6zsY="},{"Name":"label","Value":"_content/marimon_defaultd/images/login.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12186719"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022SbRPV4fhp0g9GB7p7jB/OJjIDOx/27vpBhvAx7o6zsY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 15 Apr 2025 16:15:08 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/marimon_defaultd/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
